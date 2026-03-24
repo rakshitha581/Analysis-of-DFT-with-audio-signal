@@ -60,9 +60,6 @@ idx = np.argsort(magnitude)[-N:][::-1]
 print("\nTop 10 Dominant Frequencies:")
 for i, k in enumerate(idx):
     print(f"{i+1:2d}. {freqs[k]:8.2f} Hz  (Magnitude = {magnitude[k]:.2e})")
-    ```
-**Step 7: Spectrogram (STFT)**
-```
 n_fft = 2048
 hop_length = n_fft // 4
 D = librosa.stft(y, n_fft=n_fft, hop_length=hop_length, window='hann')
@@ -75,11 +72,14 @@ plt.colorbar(format="%+2.0f dB")
 plt.title("Spectrogram (dB)")
 plt.ylim(0, sr/2)
 plt.show()
-AUDIO USED:
+```
+**AUDIO USED:**
+```
 mixkit-small-crowd-laugh-and-applause-422.wav
 ```
 
 **OUTPUT:**
+```
 Top 10 Dominant Frequencies:
 
 69.98 Hz (Magnitude = 6.79e+00)
@@ -92,6 +92,7 @@ Top 10 Dominant Frequencies:
 298.77 Hz (Magnitude = 4.41e+00)
 253.02 Hz (Magnitude = 4.36e+00)
 304.16 Hz (Magnitude = 4.30e+00)
+```
 **Graph:**
 ![WhatsApp Image 2026-03-24 at 8 56 22 PM](https://github.com/user-attachments/assets/252428d1-3fee-42a3-a6a7-3254e3c6c50b)
 ![WhatsApp Image 2026-03-24 at 8 56 55 PM](https://github.com/user-attachments/assets/da92a289-b6b6-4cda-bec0-62e35c83ffa9)
