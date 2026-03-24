@@ -53,6 +53,7 @@ plt.ylabel("Magnitude (log scale)")
 plt.title("FFT Magnitude Spectrum (log scale)")
 plt.grid(True)
 plt.show()
+```
 **Step 6: Top 10 dominant frequencies**
 ```
 N = 10
@@ -79,9 +80,9 @@ mixkit-small-crowd-laugh-and-applause-422.wav
 ```
 
 **OUTPUT:**
-```
-Top 10 Dominant Frequencies:
 
+Top 10 Dominant Frequencies:
+```
 69.98 Hz (Magnitude = 6.79e+00)
 282.62 Hz (Magnitude = 5.87e+00)
 258.40 Hz (Magnitude = 5.65e+00)
