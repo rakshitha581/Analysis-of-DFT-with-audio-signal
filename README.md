@@ -7,8 +7,8 @@
 # APPARATUS REQUIRED: 
    PC installed with SCILAB/Python. 
 **PROGRAM:**
-Step 1: Install required packages
 ```
+Step 1: Install required packages
 !pip install -q librosa soundfile
 ```
 **Step 2: Upload audio file**
