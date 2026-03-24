@@ -5,11 +5,12 @@
   To analyze audio signal by removing unwanted frequency. 
 
 # APPARATUS REQUIRED: 
-   
    PC installed with SCILAB/Python. 
 **PROGRAM:**
 Step 1: Install required packages
+```
 !pip install -q librosa soundfile
+```
 **Step 2: Upload audio file**
 ```
 from google.colab import files
